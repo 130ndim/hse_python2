@@ -8,7 +8,7 @@ def fib(n: int) -> List[int]:
     return out[:n]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from visualizer import draw_ast
 
-    draw_ast(fib).savefig('artifacts/ast.png')
+    draw_ast(fib).savefig("artifacts/ast.png")
