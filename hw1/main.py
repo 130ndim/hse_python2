@@ -11,4 +11,4 @@ def fib(n: int) -> List[int]:
 if __name__ == '__main__':
     from visualizer import draw_ast
 
-    draw_ast(fib).savefig('artifacts/ast.png', dpi=300)
+    draw_ast(fib).savefig('artifacts/ast.png')
