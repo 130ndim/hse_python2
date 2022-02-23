@@ -9,6 +9,7 @@ class HashMixin:
     data: MatrixLike
 
     def __hash__(self):
+        # sum_ij(pow(i, x_ij)) % 1337
         return int(sum(sum(map(lambda x: (i + 1) ** x, row)) for i, row in enumerate(self.data)) % 1337)
 
 
